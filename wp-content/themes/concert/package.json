@@ -11,6 +11,7 @@
   "devDependencies": {
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
+    "autoprefixer": "^10.2.5",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babelify": "^10.0.0",
@@ -26,6 +27,7 @@
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
+    "postcss": "^8.2.15",
     "prettier": "^1.19.1",
     "sass": "^1.26.3",
     "stylelint": "^13.0.0",
@@ -35,7 +37,8 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
-    "gulp-pleeease": "^2.0.2"
+    "gulp-pleeease": "^2.0.2",
+    "postcss-import": "^14.0.2"
   },
   "babel": {
     "presets": [

@@ -1,4 +1,35 @@
 .header {
-  padding: 16px;
+  padding: 16px 0;
   background-color: $primary;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu-main-container {
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    li {
+      a {
+        margin: 0 8px;
+        color: $white;
+        font-size: rem(14px);
+        font-weight: bold;
+
+        @include tablet-up {
+          font-size: rem(20px);
+        }
+      }
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-size: rem(24px);
+    font-weight: bold;
+  }
 }

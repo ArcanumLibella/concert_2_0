@@ -10,10 +10,17 @@
 
 @import './singles/__index.scss';
 
-#wpadminbar {
-  display: none;
+.content-wrapper {
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
 
-  @include tablet-up {
-    display: block;
+  @include desktop-up {
+    padding: 0;
   }
+}
+
+.main {
+  padding-top: 32px;
 }

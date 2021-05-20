@@ -6,7 +6,6 @@
   <title><?php bloginfo('name') ?></title>
   <meta charset="<?php bloginfo( 'charset' ); ?>">
   <meta name="author" content="Les Amandettes">
-  <link href="style.css" rel="stylesheet"/>
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180"
@@ -22,8 +21,14 @@
 
   <?php wp_head(); ?>
 </head>
-<body>
+
+<body <?php body_class() ?>>
   <header class="header">
-    <h6>HEADER</h6>
+    <nav class="header__nav content-wrapper">
+        <a href="<?php echo home_url( '/' ); ?>">
+          <h2>Concert 2.0</h2>
+        </a>  
+        <?php wp_nav_menu( array( 'theme_location' => 'main' ) ); ?>
+    </nav>
   </header>
   

@@ -1,3 +1,22 @@
 body {
   font-family: $leagueSpartan;
 }
+
+h1 {
+  font-size: rem(24px);
+  font-weight: bold;
+
+  @include tablet-up {
+    font-size: rem(40px);
+  }
+}
+
+h2 {
+  font-size: rem(32px);
+  font-weight: bold;
+}
+
+p {
+  font-size: rem(16px);
+  line-height: lineHeight(16px);
+}

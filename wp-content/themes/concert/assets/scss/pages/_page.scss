@@ -1,3 +1,12 @@
-.page-template-default {
-  
+.page-template {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 32px;
+
+    @include tablet-up {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 }
